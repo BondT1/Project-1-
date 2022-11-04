@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montaga&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*Header*/
+.header{
+    font-size: 10px;
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-family: 'Montaga', serif;
+    font-family: 'Playfair Display SC', serif;
+}
+
+/*navbar section*/
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.nav ul li{
+    font-family: 'montaga', serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all 0.3 ease 0s;
+}
+.nav ul li a:hover{
+    background-color: red;
+    box-shadow: 0 0 10px white;
+}
+/*background colour*/
+.style{
+    background-color: black;
+}
