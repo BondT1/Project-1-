@@ -8,27 +8,45 @@
 }
 
 /*Header*/
-.header{
+header{
     font-size: 10px;
     font-family: 'Fuzzy Bubbles', cursive;
     font-family: 'Montaga', serif;
     font-family: 'Playfair Display SC', serif;
 }
+.h1{
+    font-size: 20px;
+    font-family: 'playfaor Display SC',serif;
+    color: aliceblue;
+}
 
-/*navbar section*/
+/*navbar*/
 .nav {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
-    position: sticky;
+    position: top;
     top: 0;
+}
+/* style input container*/
+.nav input{
+    display: flex;
+    border: black;
+    float: right
+}
+.nav input[type=text]{
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 10px;
+    border: black;
 }
 .nav ul {
     display: flex;
     list-style: none;
     margin: 20px 0px;
 }
+/*navbar links*/
 .nav ul li{
     font-family: 'montaga', serif;
     font-size: 1.1rem;
@@ -40,11 +58,32 @@
     padding: 8px 25px;
     transition: all 0.3 ease 0s;
 }
+/*navbar links on mouse-over*/
 .nav ul li a:hover{
     background-color: red;
     box-shadow: 0 0 10px white;
 }
-/*background colour*/
-.style{
-    background-color: black;
+/*main*/
+.about-us{
+    display: flex;
+    text-align: center;
+}
+.h2{
+    font-size: 20px;
+    font-family: 'montaga',serif;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+/*footer*/
+.contact-me{
+    position: bottom;
+    
+
 }
