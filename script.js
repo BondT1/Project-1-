@@ -24,6 +24,7 @@ function submitHandler(e) {
         const imgHolder = $("#img-holder")
         const imgEl = $(`<img src=${results} class="someClass" />`)
         imgHolder.append(imgEl)
+        
    }
 
     });
