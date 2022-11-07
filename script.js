@@ -16,13 +16,14 @@ function submitHandler(e) {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
+    
 
       const results = data.results
       for (let i = 0; i < results.length; i++) {
-      console.log(results[i].links.download);
-      
-
+        const results = data.results[i].links.download
+        const imgHolder = $("#img-holder")
+        const imgEl = $(`<img src=${results} class="someClass" />`)
+        imgHolder.append(imgEl)
    }
 
     });
