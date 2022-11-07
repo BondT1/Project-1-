@@ -22,10 +22,21 @@ header {
 header h1 {
   font-size: 20px;
   font-family: "playfair Display SC", serif;
-  color: aliceblue;
+  color: black;
   font-size: 2.5em;
   width: 400px;
   padding: 17px;
+}
+
+body.container{
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+  url("images/hero\ img.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  margin-right: 10px;
+
 }
 
 /*navbar*/
@@ -37,13 +48,22 @@ header nav {
   top: 0;
 }
 
+div.logo img{
+  width: 150px;
+  float: left;
+  padding-left: 5%; 
+  padding-top: 4%; 
+  filter: invert();
+  margin-right: auto;
+ 
+}
 /* style input container*/
 nav input {
   display: flex;
   border: black;
   float: right;
   height: 100%;
-  margin-right: 20px;
+  margin-right: 40px;
   width: 250px;
 }
 
@@ -121,6 +141,9 @@ main P {
   justify-content: center;
   padding-left: 15%;
   padding-right: 15%;
+}
+div p{
+  color: white;
 }
 
 /*footer*/
