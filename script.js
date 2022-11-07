@@ -27,7 +27,7 @@ function submitHandler(e) {
     });
 }
 
-fetch("https://api.pexels.com/videos/search?query=nature&per_page=1", {
+fetch("https://api.pexels.com/videos/search?query=+searchTerm", {
   headers: {
     authorization: "563492ad6f91700001000001d0e3f25fe862425c9b3e73ffb90e2204",
   },
