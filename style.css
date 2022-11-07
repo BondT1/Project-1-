@@ -48,15 +48,6 @@ header nav {
   top: 0;
 }
 
-div.logo img{
-  width: 150px;
-  float: left;
-  padding-left: 5%; 
-  padding-top: 4%; 
-  filter: invert();
-  margin-right: auto;
- 
-}
 /* style input container*/
 nav input {
   display: flex;
