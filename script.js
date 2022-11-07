@@ -36,8 +36,8 @@ searchBtn.addEventListener("click", getApi);
 
 fetch("https://api.pexels.com/videos/search?query=nature&per_page=1", {
   headers: {
-    authorization: "563492ad6f91700001000001d0e3f25fe862425c9b3e73ffb90e2204"
-  }
+    authorization: "563492ad6f91700001000001d0e3f25fe862425c9b3e73ffb90e2204",
+  },
 })
 .then(res=>res.json())
 .then(data=>console.log(data));
