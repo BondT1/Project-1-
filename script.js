@@ -40,7 +40,7 @@ function getImg(searchTerm) {
 }
 
 function getVid(searchTerm) {
-  fetch("https://api.pexels.com/videos/search?query=rose", {
+  fetch("https://api.pexels.com/videos/search?query="+searchTerm, {
     headers: {
       authorization: "563492ad6f91700001000001d0e3f25fe862425c9b3e73ffb90e2204",
     }
@@ -54,7 +54,6 @@ function getVid(searchTerm) {
     imgHolder.empty()
     for (let i = 0; i < resultsVid.length; i++) {
       const resultsVid = data.videos[i].video_files[0].link
-      console.log(resultsVid);
       const vidHolder = $("#vid-holder");
       const vidEl = $(`<video width="320" height="240" controls>
       <source src="${resultsVid}" type="video/mp4">
