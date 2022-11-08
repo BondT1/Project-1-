@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>>
+  
     <title>Vim Wallpapers</title>
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.CSS"
-      image.png  rel=" stylesheet"
-    />
     <link
       href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montaga&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css"/>
   </head>
 
   <body style="background-color: grey" class="container">
+  
     <header>
      <h1>Vim Gallery</h1>
+
       <nav>
          <ul>
           <li class="logo"><img src="images/logo img4.png" alt="logo">
@@ -39,20 +39,20 @@
     <main id="about-us">
       <div>
         <h2>Vim Gallery</h2>
+        <form>
         <input
           type="text"
           placeholder="Search Images ..."
           id="about-us-search"
         />
-        <label for="type"></label>
-
+      
         <select name="type" id="img-vid">
             <option value="Image" id="img">Image</option>
             <option value="Video" id="vid">Video</option>
         </select>
         
         <button type="submit" id="search-button">Search</button>
-        
+        </form>
 
         <h3>About us</h3>
         <p>
