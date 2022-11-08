@@ -137,6 +137,12 @@ div p{
   color: white;
 }
 
+.someClass {
+  width: 321px;
+  aspect-ratio: auto 321 / 401;
+  height: 401px;
+  
+}
 /*footer*/
 footer {
   position: bottom;
