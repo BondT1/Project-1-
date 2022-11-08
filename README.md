@@ -16,5 +16,7 @@
 ## Technologies Built With
 
 ## Authors
-[Tom Bond](https://github.com/BondT1)
-@BondT1 @nagibnur @faizahmed2002 @maryanne3 @Nuseyba Kenadid @Yusuf Hassan 
+*[Tom Bond](https://github.com/BondT1) *[Nagib Nur](https://github.com/nagibnur) *[Faiz Ahmed](https://github.com/faizahmed2002) 
+*[Maryan Abdalla](https://github.com/maryanne3) *[Nuseyba Kenadid](https://github.com/NazKena) 
+
+
