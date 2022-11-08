@@ -46,9 +46,11 @@ fetch("https://api.pexels.com/videos/search?query=rose", {
   for (let i = 0; i < resultsVid.length; i++) {
     const resultsVid = data.videos[i].video_files[0].link
     console.log(resultsVid);
-    // const imgHolder = $("#vid-holder");
-    //     const vidEl = $(`<video src=${resultsVid} class="someClass" />`);
-    //     vidHolder.append(vidEl);
+    const vidHolder = $("#vid-holder");
+    const vidEl = <video width="320" height="240" controls>
+    <source src="resultsVid" type="video/mp4">
+    </video> 
+        vidHolder.append(vidEl);
   }
 })
  
