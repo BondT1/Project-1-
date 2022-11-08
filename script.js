@@ -32,7 +32,7 @@ function submitHandler(e) {
 }
 
 
-fetch("https://api.pexels.com/videos/search?query=apple", {
+fetch("https://api.pexels.com/videos/search?query=rose", {
   headers: {
     authorization: "563492ad6f91700001000001d0e3f25fe862425c9b3e73ffb90e2204",
   }
@@ -42,6 +42,7 @@ fetch("https://api.pexels.com/videos/search?query=apple", {
 })
 .then(function (data) {
   const resultsVid = data.videos;
+  console.log(resultsVid);
   for (let i = 0; i < resultsVid.length; i++) {
     const resultsVid = data.videos[i].video_files[0].link
     console.log(resultsVid);
