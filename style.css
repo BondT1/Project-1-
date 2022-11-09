@@ -120,6 +120,10 @@ main input {
   padding: 10px;
 }
 
+.last-btn-class {
+  display: none
+}
+
 main h3 {
   font-size: 25px;
   padding: 30px;

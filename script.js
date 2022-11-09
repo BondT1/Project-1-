@@ -69,6 +69,13 @@ $(document).ready(function() {
   console.log(getLocal)
 })
 
+function showLastBtn(searchTerm) {
+  if (searchTerm) {
+    $('#last-button').show();
+  }
+
+}
+
 // function insertLocalStorage() {
 //   localStorage.getItem('search-term');
 // }
