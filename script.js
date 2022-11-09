@@ -8,9 +8,11 @@ const vidHolder = $("#vid-holder");
 searchBtn.addEventListener("click", submitHandler);
 
 function submitHandler(e) {
+  console.log(e);
   e.preventDefault();
   const format = selectDownDrop.value
   const searchTerm = inputSearch.value.trim();
+  localStorage.setItem('search-term', searchTerm);
   if (selectDownDrop.value === 'Image') {
     getImg(searchTerm)
   }else  {
@@ -27,7 +29,7 @@ function getImg(searchTerm) {
       return response.json();
     })
     .then(function (data) {
-      const results = data.results;
+      var results = data.results;
       imgHolder.empty()
       vidHolder.empty()
       for (let i = 0; i < results.length; i++) {
@@ -62,3 +64,24 @@ function getVid(searchTerm) {
     }
   })
 }
+
+function insertLocalStorage() {
+  localStorage.getItem('search-term');
+}
+
+function lastSave() {
+  var lastSaveBtn = $("#last-button")
+    .on('click', function () {
+      imgHolder.empty();
+      vidHolder.empty();
+      insertLocalStorage().inputSearch.push(searchTerm);
+      // getImg(searchTerm);
+      // getVid(searchTerm);
+    }
+  )}
+
+// WHEN I click the search button
+// THEN it displays my search input and it is added to my local storage
+// WHEN I click the 'last search' button
+// THEN it clears the current search and redirects me to my most recent search before this 
+
