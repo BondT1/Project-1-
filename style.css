@@ -16,7 +16,7 @@ header {
   font-family: "Fuzzy Bubbles", cursive;
   font-family: "Montaga", serif;
   font-family: "Playfair Display SC", serif;
-  background-color: black;
+  background-color: white;
 }
 
 header h1 {
@@ -28,21 +28,10 @@ header h1 {
   padding: 17px;
 }
 
-body.container{
-  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
-  url("images/hero\ img.jpg");
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-  margin-right: 10px;
-
-}
-
 /*navbar*/
 header nav {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: top;
   top: 0;
@@ -56,13 +45,16 @@ nav input {
   height: 100%;
   margin-right: 40px;
   width: 250px;
+  justify-content: space-between;
 }
 
 nav input[type="text"] {
   padding: 6px;
   margin-top: 8px;
-  font-size: 10px;
+  font-size: 16px;
   border: black;
+  color: black;
+  border-radius: 5px 0 0 5px;
 }
 nav ul {
   display: flex;
@@ -71,21 +63,24 @@ nav ul {
 }
 /*navbar links*/
 nav ul li {
+  display: inline-block;
+  padding: 0px 20px;
   font-family: "montaga", serif;
   font-size: 1.1rem;
   font-weight: bold;
 }
 nav ul li a {
+  transition: all 0.3s ease 0s;
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 8px 25px;
-  transition: all 0.3 ease 0s;
+ 
 }
 
 /*navbar links on mouse-over*/
 nav ul li a:hover {
-  background-color: red;
-  box-shadow: 0 0 10px white;
+  background-color: white;
+  box-shadow: 0 0 10px black;
 }
 
 .container {
@@ -105,7 +100,7 @@ main {
 h2 {
   font-size: 20px;
   font-family: "montaga", serif;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -118,6 +113,15 @@ main input {
   width: 60%;
   height: 20px;
   padding: 10px;
+}
+label.icon{
+  height: 100%;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #000;
+  border-radius: 0 5px 5px 0;
+
 }
 
 .last-btn-class {
@@ -177,6 +181,6 @@ footer li a {
 }
 
 footer li a:hover {
-  background-color: red;
+  background-color: black;
   box-shadow: 0 0 10px white;
 }
