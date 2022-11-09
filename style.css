@@ -143,6 +143,18 @@ div p{
   height: 401px;
   
 }
+
+#img-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
 /*footer*/
 footer {
   position: bottom;
