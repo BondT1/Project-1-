@@ -8,7 +8,6 @@ const vidHolder = $("#vid-holder");
 searchBtn.addEventListener("click", submitHandler);
 
 function submitHandler(e) {
-  console.log(e);
   e.preventDefault();
   const format = selectDownDrop.value
   const searchTerm = inputSearch.value.trim();
@@ -65,20 +64,25 @@ function getVid(searchTerm) {
   })
 }
 
-function insertLocalStorage() {
-  localStorage.getItem('search-term');
-}
+$(document).ready(function() {
+  var getLocal = localStorage.getItem('search-term');
+  console.log(getLocal)
+})
 
-function lastSave() {
-  var lastSaveBtn = $("#last-button")
-    .on('click', function () {
-      imgHolder.empty();
-      vidHolder.empty();
-      insertLocalStorage().inputSearch.push(searchTerm);
-      // getImg(searchTerm);
-      // getVid(searchTerm);
-    }
-  )}
+// function insertLocalStorage() {
+//   localStorage.getItem('search-term');
+// }
+
+// function lastSave() {
+//   var lastSaveBtn = $("#last-button")
+//     .on('click', function () {
+//       imgHolder.empty();
+//       vidHolder.empty();
+//       insertLocalStorage().inputSearch.push(searchTerm);
+//       // getImg(searchTerm);
+//       // getVid(searchTerm);
+//     }
+//   )}
 
 // WHEN I click the search button
 // THEN it displays my search input and it is added to my local storage
