@@ -3,10 +3,12 @@ const inputSearch = document.querySelector("#about-us-search");
 const selectDownDrop = document.querySelector('#img-vid')
 const imgHolder = $("#img-holder");
 const vidHolder = $("#vid-holder");
+const lastBtn = $('#last-button');
 
 
 
 searchBtn.addEventListener("click", submitHandler);
+
 
 function submitHandler(e) {
   e.preventDefault();
@@ -20,6 +22,7 @@ function submitHandler(e) {
   }
   
 }
+
 function getImg(searchTerm) {
   const Url =
     "https://api.unsplash.com/search/photos/?client_id=dtdf4YL-mhArMfnqr6Kff3o0ccg2LXWb6Q4bWkXEI4o&query=" +
@@ -67,15 +70,33 @@ function getVid(searchTerm) {
 }
 
 $(document).ready(function() {
-  var getLocal = localStorage.getItem('search-term');
-  console.log(getLocal)
+  searchStorage = localStorage.getItem('search-term');
+  showLastBtn(searchStorage);
+  lastSearchBtn()
 })
+
 
 function showLastBtn(searchTerm) {
   if (searchTerm) {
     $('#last-button').show();
   }
 }
+
+// lastBtn.addEventListener("click", lastSearchBtn);
+
+function lastSearchBtn () {
+  lastBtn.on('click', function () {
+  })
+
+}
+
+
+
+
+
+
+
+
 
 
 
