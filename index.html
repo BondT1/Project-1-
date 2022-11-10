@@ -4,13 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   
-    <title>Vim Wallpapers</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montaga&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
+    <title>Vim Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montaga&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="./style.css"/>
   </head>
 
@@ -18,7 +15,8 @@
   
     <header>
      <h1>Vim Gallery</h1>
-      <nav class="flex flex-row ..">
+
+      <nav>
          <ul>
           <li>
             <a href="index.html">Home</a>
@@ -27,7 +25,7 @@
             <a href="#About us">About Us</a>
           </li>
           <li>
-            <a href="#contact us ">Contact Me</a>
+            <a href="#contact us ">Contact Us</a>
           </li>
           <li>
             <a href='log-in.html'>Log In</a>
@@ -46,8 +44,10 @@
         <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
           type="text"
           placeholder="Search Images ..."
-          id="about-us-search"
-        />
+          id="about-us-search"/>
+          <label class="icon">
+          <span class="fas fa-search"></span>
+          </label>
       
         <select class= "border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" name="type" id="img-vid">
             <option value="Image" id="img">Image</option>
