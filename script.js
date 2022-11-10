@@ -7,8 +7,9 @@ const lastBtn = $('#last-button');
 
 
 
-searchBtn.addEventListener("click", submitHandler);
 
+searchBtn.addEventListener("click", submitHandler);
+// lastBtn.addEventListener("click", lastSearchBtn());
 
 function submitHandler(e) {
   e.preventDefault();
@@ -72,23 +73,28 @@ function getVid(searchTerm) {
 $(document).ready(function() {
   searchStorage = localStorage.getItem('search-term');
   showLastBtn(searchStorage);
-  lastSearchBtn()
 })
 
 
-function showLastBtn(searchTerm) {
-  if (searchTerm) {
+function showLastBtn(search) {
+  if (search) {
     $('#last-button').show();
   }
 }
 
-// lastBtn.addEventListener("click", lastSearchBtn);
 
-function lastSearchBtn () {
-  lastBtn.on('click', function () {
-  })
+$('#last-button').on('click', function() {
+  var history = searchStorage.val();
+  console.log(history);
+})
 
-}
+
+
+
+  
+  
+
+
 
 
 
