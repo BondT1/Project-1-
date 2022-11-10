@@ -5,18 +5,20 @@ const imgHolder = $("#img-holder");
 const vidHolder = $("#vid-holder");
 
 
+
 searchBtn.addEventListener("click", submitHandler);
 
 function submitHandler(e) {
   e.preventDefault();
   const format = selectDownDrop.value
-  const searchTerm = inputSearch.value.trim();
+  var searchTerm = inputSearch.value.trim();
   localStorage.setItem('search-term', searchTerm);
   if (selectDownDrop.value === 'Image') {
     getImg(searchTerm)
   }else  {
     getVid(searchTerm)
   }
+  
 }
 function getImg(searchTerm) {
   const Url =
@@ -73,8 +75,19 @@ function showLastBtn(searchTerm) {
   if (searchTerm) {
     $('#last-button').show();
   }
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 // function insertLocalStorage() {
 //   localStorage.getItem('search-term');
