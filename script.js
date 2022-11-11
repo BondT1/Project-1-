@@ -13,15 +13,18 @@ searchBtn.addEventListener("click", submitHandler);
 
 function submitHandler(e) {
   e.preventDefault();
-  const format = selectDownDrop.value
   var searchTerm = inputSearch.value.trim();
   localStorage.setItem('search-term', searchTerm);
+  search(searchTerm)
+}
+
+function search(searchTerm) {
+  console.log(`Searching for ${searchTerm}`)
   if (selectDownDrop.value === 'Image') {
     getImg(searchTerm)
   }else  {
     getVid(searchTerm)
   }
-  
 }
 
 function getImg(searchTerm) {
@@ -82,9 +85,10 @@ function showLastBtn(search) {
   }
 })}
 
-$('#last-button').on('click', function() {
+$('#last-button').on('click', function(event) {
+  event.preventDefault()
   var lastSearch = localStorage.getItem('search-term')
-  submitHandler(lastSearch);
+  search(lastSearch);
   })
 
 
