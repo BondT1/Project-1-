@@ -9,7 +9,7 @@ const lastBtn = $('#last-button');
 
 
 searchBtn.addEventListener("click", submitHandler);
-// lastBtn.addEventListener("click", lastSearchBtn());
+
 
 function submitHandler(e) {
   e.preventDefault();
@@ -82,10 +82,13 @@ function showLastBtn(search) {
   }
 })}
 
-// $('#last-button').on('click', function() {
-//   var history = searchStorage.val();
-//   console.log(history);
-// })
+$('#last-button').on('click', function() {
+  var lastSearch = localStorage.getItem('search-term')
+  submitHandler(lastSearch);
+  })
+
+
+  // want to get last 'search-term' and run it again 
 
 
 
