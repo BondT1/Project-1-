@@ -75,18 +75,17 @@ $(document).ready(function() {
   showLastBtn(searchStorage);
 })
 
-
 function showLastBtn(search) {
+  $("#search-button").on('click', function() {
   if (search) {
     $('#last-button').show();
   }
-}
+})}
 
-
-$('#last-button').on('click', function() {
-  var history = searchStorage.val();
-  console.log(history);
-})
+// $('#last-button').on('click', function() {
+//   var history = searchStorage.val();
+//   console.log(history);
+// })
 
 
 
@@ -135,4 +134,3 @@ $('#last-button').on('click', function() {
 // THEN it displays my search input and it is added to my local storage
 // WHEN I click the 'last search' button
 // THEN it clears the current search and redirects me to my most recent search before this 
-
