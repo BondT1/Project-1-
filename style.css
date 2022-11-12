@@ -1,11 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montaga&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap");
 
 * {
-  margin: 0%;
+  margin: auto;
   padding: 0%;
   box-sizing: border-box;
 }
 
+form {
+  display: flex
+}
+
+.icon {
+  margin: 0;
+  display: flex;
+}
 /*Header*/
 header {
   display: flex;
@@ -27,6 +35,17 @@ header h1 {
   padding: 17px;
 }
 
+.font {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 0;
+  font-size: 10px;
+  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Montaga", serif;
+  font-family: "Playfair Display SC", serif;
+}
+
 /*navbar*/
 header nav {
   display: flex;
@@ -34,6 +53,17 @@ header nav {
   align-items: center;
   position: top;
   top: 0;
+}
+
+.home-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 0;
+  font-size: 10px;
+  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Montaga", serif;
+  font-family: "Playfair Display SC", serif;
 }
 
 /* style input container*/
@@ -44,6 +74,7 @@ nav input {
   margin-right: 40px;
   width: 250px;
   justify-content: space-between;
+  float: right;
 }
 
 nav input[type="text"] {
@@ -81,6 +112,7 @@ nav ul li a:hover {
 }
 
 .container {
+  margin:auto;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -121,10 +153,14 @@ label.icon{
 
 }
 
+#svg {
+  position: center;
+}
+
 main h3 {
   font-size: 25px;
   padding: 30px;
-  color: white;
+  color: black;
   font-family: "montaga", serif;
 }
  
@@ -133,9 +169,10 @@ main P {
   justify-content: center;
   padding-left: 15%;
   padding-right: 15%;
+  font-family: "montaga", serif;
 }
 div p{
-  color: white;
+  color: black;
 }
 
 .someClass {
@@ -144,6 +181,20 @@ div p{
   height: 401px;
   
 }
+
+.contact-me {
+  float: right;
+  font-size: 10px;
+  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Montaga", serif;
+  font-family: "Playfair Display SC", serif;
+}
+
+.github {
+  display: flex;
+  justify-content: right;
+}
+
 /*footer*/
 footer {
   position: bottom;
@@ -157,6 +208,9 @@ footer {
   bottom: 0;
   left: 0;
   z-index: 1030;
+  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Montaga", serif;
+  font-family: "Playfair Display SC", serif;
 }
 
 footer li a {
@@ -173,6 +227,7 @@ footer li a {
 }
 
 footer li a:hover {
-  background-color: black;
+  background-color: white;
   box-shadow: 0 0 10px white;
 }
+
