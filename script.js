@@ -92,8 +92,6 @@ $('#last-button').on('click', function(event) {
   })
 
 
-  // want to get last 'search-term' and run it again 
-
 
 
 

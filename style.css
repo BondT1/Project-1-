@@ -120,6 +120,14 @@ label.icon{
   border-radius: 0 5px 5px 0;
 
 }
+
+#last-button {
+    font-size: 18px;
+    font-family: "montaga", serif;
+    color: black;
+    text-align: center;
+}
+
  
 .last-btn-class {
   display: none
