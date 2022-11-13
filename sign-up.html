@@ -6,33 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   
-    <title>Vim Wallpapers</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montaga&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style.css">
+    <title>Vim Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montaga&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="./style.css"/>
   </head>
 
-  <header>
-    <h1>Vim Gallery</h1>
-   <nav class="flex flex-row ..">
-    <ul>
-      <li class="flex justify-between items-center">
-       <a href="index.html">Home</a>
-      </li>
-      <li>
-       <a href='log-in.html'>Log In</a>
-      </li>
-      <li>
-       <a href='sign-up.html'>Sign Up</a>
-      </li>  
-    </ul>
-   </nav>
-   </header>
+  <body style="background-color: white">
+    <div class="container">
+  
+    <header>
+     <h1> Vim Gallery </h1>
+      <nav>
+         <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="#About us">About Us</a>
+          </li>
+          <li>
+            <a href="#contact us ">Contact Us</a>
+          </li>
+          <li>
+            <a href='log-in.html'>Log In</a>
+          </li>
+          <li>
+          <a href='sign-up.html'>Sign Up</a>
+          </li>  
+        </ul>
+      </nav>
+    </header>
 
    <body>
-   
+  
+  <div id="font">
     <div class="container max-w-sm mx-auto flex-2 flex flex-col items-center justify-center px-2">
       <form></form>
       <h1><b>Sign Up Form</b></h1>
@@ -48,14 +55,21 @@
       <label for="Repeat Password">Repeat Password</label>
       <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" type="text" placeholder="Repeat Password here">
       <br>
-      <button class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" type="submit">Create Account</button>
+      <button class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" type="submit"><b>Create An Account</b></button>
       <br>
-    <p> Already have an acccount? <a href="./log-in.html>"></a></p>  
+    <p id="parent"> Already have an acccount? <a href="./log-in.html" style="color:dodgerblue">Click here to Log in</a></p>
     </form>
    </div>
-
   </form> 
+</div> 
+
+  <footer class="contact-me">
+    <h2 class="float-left text-black">Contact Us</h2>
+    <div class="github">
+      <p class="float-right text-black">
+        <a href="https://github.com/BondT1">Github</a>
+      </p>
+    </div>
+  </footer>
   
-
-
    </body>
