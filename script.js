@@ -3,20 +3,30 @@ const inputSearch = document.querySelector("#about-us-search");
 const selectDownDrop = document.querySelector('#img-vid')
 const imgHolder = $("#img-holder");
 const vidHolder = $("#vid-holder");
+const lastBtn = $('#last-button');
+
+
 
 
 searchBtn.addEventListener("click", submitHandler);
 
+
 function submitHandler(e) {
   e.preventDefault();
-  const format = selectDownDrop.value
-  const searchTerm = inputSearch.value.trim();
+  var searchTerm = inputSearch.value.trim();
+  localStorage.setItem('search-term', searchTerm);
+  search(searchTerm)
+}
+
+function search(searchTerm) {
+  console.log(`Searching for ${searchTerm}`)
   if (selectDownDrop.value === 'Image') {
     getImg(searchTerm)
   }else  {
     getVid(searchTerm)
   }
 }
+
 function getImg(searchTerm) {
   const Url =
     "https://api.unsplash.com/search/photos/?client_id=dtdf4YL-mhArMfnqr6Kff3o0ccg2LXWb6Q4bWkXEI4o&query=" +
@@ -27,7 +37,7 @@ function getImg(searchTerm) {
       return response.json();
     })
     .then(function (data) {
-      const results = data.results;
+      var results = data.results;
       imgHolder.empty()
       vidHolder.empty()
       for (let i = 0; i < results.length; i++) {
@@ -62,3 +72,21 @@ function getVid(searchTerm) {
     }
   })
 }
+
+$(document).ready(function() {
+  searchStorage = localStorage.getItem('search-term');
+  showLastBtn(searchStorage);
+})
+
+function showLastBtn(search) {
+  $("#search-button").on('click', function() {
+  if (search) {
+    $('#last-button').show();
+  }
+})}
+
+$('#last-button').on('click', function(event) {
+  event.preventDefault()
+  var lastSearch = localStorage.getItem('search-term')
+  search(lastSearch);
+  })
