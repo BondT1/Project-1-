@@ -197,16 +197,10 @@ div p{
 
 .contact-me {
   float: right;
-  font-size: 10px;
-  font-family: "Fuzzy Bubbles", cursive;
+  font-size: 15px;
   font-family: "Montaga", serif;
-  font-family: "Playfair Display SC", serif;
 }
 
-.github {
-  display: flex;
-  justify-content: right;
-}
 
 /*footer*/
 footer {
@@ -244,4 +238,20 @@ footer li a:hover {
   background-color: white;
   box-shadow: 0 0 10px white;
 }
+
+/* Sign Up form */
+
+#parent {
+  width: 100%;
+  height: 90px;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#font {
+  font-family: "Fuzzy Bubbles", cursive;
+  font-family: "Montaga", serif;
+}
+
+
 
