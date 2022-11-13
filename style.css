@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+/*Icon*/
+
 form {
   display: flex
 }
@@ -14,6 +16,7 @@ form {
   margin: 0;
   display: flex;
 }
+
 /*Header*/
 header {
   display: flex;
@@ -102,7 +105,6 @@ nav ul li a {
   transition: all 0.3s ease 0s;
   text-decoration: none;
   padding: 8px 25px;
- 
 }
 
 /*navbar links on mouse-over*/
@@ -234,23 +236,19 @@ footer li a {
   margin-right: 100px;
 }
 
-footer li a:hover {
+footer a:hover {
   background-color: white;
-  box-shadow: 0 0 10px white;
+  box-shadow: 0 0 20px black;
 }
 
 /* Sign Up form */
 
-#parent {
-  width: 100%;
-  height: 90px;
-  white-space: nowrap;
-  overflow-x: auto;
-}
-
 #font {
   font-family: "Fuzzy Bubbles", cursive;
   font-family: "Montaga", serif;
+  margin-top:220px;
+  height:100px;
+  width:500px;
 }
 
 
