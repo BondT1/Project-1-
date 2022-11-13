@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   
     <title>Vim Wallpapers</title>
     <link
@@ -16,30 +16,43 @@
 
   <header>
     <h1>Vim Gallery</h1>
-     <nav></nav>
-        <a href='log-in.html'>Log In</a>
-        </li>
-        <li>
-         <a href='sign-up.html'>Sign Up</a>
-         </li>  
-       </ul>
-     </nav>
+   <nav class="flex flex-row ..">
+    <ul>
+      <li class="flex justify-between items-right">
+       <a href="index.html">Home</a>
+      </li>
+      <li>
+       <a href='log-in.html'>Log In</a>
+      </li>
+      <li>
+       <a href='sign-up.html'>Sign Up</a>
+      </li>  
+    </ul>
+   </nav>
    </header>
 
-</form> 
-<div class="px-12 flex flex-col h-screen my-auto items-right bgimg bg-cover">
-   <h1><b>Log In</b></h1>
-<p>Please fill in this form to create an account with Vim Gallery</p>
-   <label for="email">Email</label>
-   <input type="text" placeholder="Enter Email here">
-<br>
-   <label for="email">Password</label>
-   <input type="text" placeholder="Enter Password here">
-   <br>
-   <button class type="submit">Log In</button> 
-   <br>
-   <button type="button">Cancel</button>
-</div>
+    <div class="container max-w-sm mx-auto flex-2 flex flex-col items-center justify-center px-2">
+    <form></form>
+    <h1><b>Log In</b></h1>
+    <br>
+ <p>Please fill in this form to log into your account with Vim Gallery</p>
+ <br>
+    <label for="email">Email</label>
+    <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" type="text" placeholder="Enter Email here">
+ <br>
+    <label for="email">Password</label>
+    <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"type="text" placeholder="Enter Password here">
+    <br>
+
+  <div>
+    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center" type="submit">Log In</button> 
+    <br>
+    <button class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none items justify-center" type="button">Cancel</button>
+   </div>
+  </form> 
+ </div>
+
+
 
 
    <body>

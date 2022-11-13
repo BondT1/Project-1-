@@ -4,51 +4,58 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   
     <title>Vim Wallpapers</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Montaga&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css">
   </head>
 
   <header>
     <h1>Vim Gallery</h1>
-     <nav class="flex flex-row ..">
-    <li>
-      <a href="index.html">Home</a>
-    </li>
-      <a href='log-in.html'>Log In</a>
-     </li>
-     <li>
-      <a href='sign-up.html'>Sign Up</a>
+   <nav class="flex flex-row ..">
+    <ul>
+      <li class="flex justify-between items-center">
+       <a href="index.html">Home</a>
+      </li>
+      <li>
+       <a href='log-in.html'>Log In</a>
+      </li>
+      <li>
+       <a href='sign-up.html'>Sign Up</a>
       </li>  
-       </ul>
-     </nav>
+    </ul>
+   </nav>
    </header>
 
    <body>
-   <form>
-
-   </form> 
-   <div class="px-12 flex flex-col h-screen my-auto items-right bgimg bg-cover">
+   
+    <div class="container max-w-sm mx-auto flex-2 flex flex-col items-center justify-center px-2">
+      <form></form>
       <h1><b>Sign Up Form</b></h1>
+      <br>
    <p>Please fill in this form to create an account with Vim Gallery</p>
+   <br>
       <label for="email">Email</label>
-      <input type="text" placeholder="Enter Email here">
+<input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" type="text" placeholder="Enter Email here">
    <br>
       <label for="email">Password</label>
-      <input type="text" placeholder="Enter Password here">
+      <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"type="text" placeholder="Enter Password here">
    <br>
       <label for="Repeat Password">Repeat Password</label>
-      <input type="text" placeholder="Repeat Password here">
+      <input class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" type="text" placeholder="Repeat Password here">
       <br>
-      <button class type="submit">Sign Up</button> 
+      <button class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none" type="submit">Create Account</button>
       <br>
-      <button type="button">Cancel</button>
+    <p> Already have an acccount? <a href="./log-in.html>"></a></p>  
+    </form>
    </div>
+
+  </form> 
+  
 
 
    </body>
