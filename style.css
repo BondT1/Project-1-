@@ -17,6 +17,12 @@ form {
   display: flex;
 }
 
+/*Image and Videos*/
+
+#img {
+  aspect-ratio: 1 / 1;
+}
+
 /*Header*/
 header {
   display: flex;
