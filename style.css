@@ -157,6 +157,19 @@ label.icon{
   position: center;
 }
 
+#last-button {
+  font-size: 18px;
+  font-family: "montaga", serif;
+  color: black;
+  text-align: center;
+}
+
+
+.last-btn-class {
+display: none
+}
+
+
 main h3 {
   font-size: 25px;
   padding: 30px;
@@ -199,6 +212,7 @@ div p{
 footer {
   position: bottom;
   display: flex;
+  margin: auto;
   justify-content: space-between;
   align-items: center;
   padding: 25px;
